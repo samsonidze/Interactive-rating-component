@@ -20,6 +20,7 @@ body{
     position: absolute;
     bottom: 0;
     color: white;
+    text-align: center;
 }
 
 /* unsubmited */
@@ -131,6 +132,9 @@ body{
     color: grey;
 }
 
+.submit-btn{
+    border: none;
+}
 
 @media(max-width:465px){
     .main-submited{
