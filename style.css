@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    font-family: "Overpass";
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+/* unsubmited */
+
+.main{
+    background-color: hsl(213, 19%, 18%);
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+   
+}
+
+.main img{
+    padding: 10px;
+    background-color: hsl(213, 19%, 22%);
+    border-radius: 100%;
+}
+
+.main h1{
+    color: white;
+    margin: 20px 0;
+}
+
+.main p{
+    color: grey;
+
+}
+
+.main .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main .button-container button{
+    border-radius: 100%;
+    padding: 15px 20px;
+    margin: 20px 0;
+    color: hsl(0, 0%, 70%);
+    background-color: hsl(213, 19%, 22%);
+    border: none;
+    cursor: pointer;
+}
+
+.main .button-container button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.main .button-container button.active{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+
+}
+
+.main .submit-btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color:  hsl(25, 97%, 53%);
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    
+}
+.main .submit-btn:hover{
+    background-color: white;
+    transition: 0.5s;
+
+}
+
+
+/* subbmited */
+
+.main-submited{
+    background-color: hsl(213, 19%, 18%);
+    width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+}
+
+.main-submited img{
+    display: block;
+    margin: 20px auto;
+}
+
+.main-submited .first-p{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 28%);
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.main-submited h1{
+    color: white;
+    margin: 20px 0;
+}
+
+.main-submited .second-p{
+    color: grey;
+}
+
+
+@media(max-width:465px){
+    .main-submited{
+        width: 350px;
+    }
+    .main{
+        width: 350px;
+       
+    }
+}
+
+@media(max-width:365px){
+    .main-submited{
+        width: 300px;
+    }
+    .main{
+        width: 300px;
+       
+    }
+    .main .button-container button{
+        padding: 10px 15px;
+       
+    }
+}
